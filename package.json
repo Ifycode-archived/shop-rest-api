@@ -1,0 +1,16 @@
+{
+  "name": "shop-rest-api",
+  "version": "1.0.0",
+  "description": "Restful api project for a shop with nodejs \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dbuilt with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "restful",
+    "api"
+  ],
+  "author": "Obiagba Mary",
+  "license": "ISC"
+}
