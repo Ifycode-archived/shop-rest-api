@@ -8,7 +8,7 @@ const orderRoutes = require('./api/routes/orders');
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({
-    extended: false
+    extended: false //set to true if you want more complex body with rich data in it for urlencoded data
 }));
 app.use(bodyParser.json());
 
