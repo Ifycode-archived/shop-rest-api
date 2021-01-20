@@ -1,0 +1,6 @@
+{
+    "env": {
+        "MONGO_ATLAS_PASSWORD": "coDer1991",
+        "DBNAME": "shop-database"
+    }
+}

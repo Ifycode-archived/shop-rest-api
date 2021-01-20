@@ -2,9 +2,15 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
+
+mongoose.connect(`mongodb+srv://Mary:${process.env.MONGO_ATLAS_PASSWORD}@shop-rest-api.sxnn0.mongodb.net/${process.env.DBNAME}?retryWrites=true&w=majority`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({
