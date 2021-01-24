@@ -12,6 +12,8 @@ mongoose.connect(`mongodb+srv://Mary:${process.env.MONGO_ATLAS_PASSWORD}@shop-re
     useUnifiedTopology: true
 });
 
+mongoose.Promise = global.Promise;
+
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({
     extended: false //set to true if you want more complex body with rich data in it for urlencoded data
